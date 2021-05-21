@@ -29,7 +29,7 @@ import logging
 import os
 from abc import ABC, abstractmethod
 from typing import Callable, Dict, NamedTuple, Optional, Union
-from typing import final
+# from typing import final
 
 import torch
 import torch.nn as nn
@@ -298,7 +298,7 @@ class ModelExportMethod(ABC):
         pass
 
     @classmethod
-    @final
+    # @final
     def test_export_and_load(
         cls, model, input_args, export_method, export_kwargs, output_checker
     ):
